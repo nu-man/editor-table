@@ -1,0 +1,87 @@
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .heading {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* CKEditor Styling */
+  .editor {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  /* Preview Container */
+  .preview-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .preview-heading {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Preview Content Styling */
+  .preview {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    min-height: 100px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  /* Styles for Table in Preview */
+  .preview-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .preview-content th {
+    background-color: #dfe2e5;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .preview-content td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .preview-content tr:nth-child(odd) {
+    background-color: #f7f7f7;
+  }
+  
+  .preview-content tr:nth-child(even) {
+    background-color: #fff;
+  }
+  
+  /* Styles for Images in Preview */
+  .preview-content img {
+    max-width: 100%;  /* Make sure images don't exceed the preview width */
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+  

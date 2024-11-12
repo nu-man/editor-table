@@ -1,0 +1,15 @@
+.quill-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.quill-content th, .quill-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.quill-content th {
+  background-color: #f2f2f2;
+}
