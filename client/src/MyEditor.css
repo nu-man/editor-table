@@ -1,87 +1,178 @@
 /* Main Container */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Heading */
-  .heading {
-    text-align: center;
-    color: #333;
-  }
-  
-  /* CKEditor Styling */
-  .editor {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    height: 400px;
-    margin-bottom: 20px;
-  }
-  
-  /* Preview Container */
-  .preview-container {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .preview-heading {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  /* Preview Content Styling */
-  .preview {
-    padding: 10px;
-    background-color: #f1f1f1;
-    border-radius: 4px;
-    min-height: 100px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  /* Styles for Table in Preview */
-  .preview-content table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-  }
-  
-  .preview-content th {
-    background-color: #dfe2e5;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-  }
-  
-  .preview-content td {
-    padding: 8px 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
-  .preview-content tr:nth-child(odd) {
-    background-color: #f7f7f7;
-  }
-  
-  .preview-content tr:nth-child(even) {
-    background-color: #fff;
-  }
-  
-  /* Styles for Images in Preview */
-  .preview-content img {
-    max-width: 100%;  /* Make sure images don't exceed the preview width */
-    height: auto;
-    display: block;
-    margin: 10px 0;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* CKEditor Styling */
+.editor {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.text-input,
+.textarea-input,
+.datetime-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.textarea-input {
+  height: 80px;
+  resize: none;
+}
+
+.text-input:focus,
+.textarea-input:focus,
+.datetime-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Checkbox */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+}
+
+label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* URL Input and Button */
+.url-input-container {
+  margin-top: 20px;
+}
+
+.image-url-input {
+  width: calc(100% - 110px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.insert-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.insert-button:hover {
+  background-color: #0056b3;
+}
+
+/* Submit Button */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+
+.submit-button:hover:enabled {
+  background-color: #218838;
+}
+
+/* Preview Container */
+.preview-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.preview-heading {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Preview Content Styling */
+.preview {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  min-height: 100px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Styles for Table in Preview */
+.preview-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.preview-content th {
+  background-color: #dfe2e5;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.preview-content td {
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.preview-content tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.preview-content tr:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Styles for Images in Preview */
+.preview-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
